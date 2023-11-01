@@ -1,0 +1,15 @@
+services:
+  db:
+    image: 'sqlite'
+    volumes:
+      - ./src/main/resources/db:/data
+    command: sqlite3 /data/init.db
+  server:
+    build: .
+    image: dth-server:latest
+    ports:
+      - "8090:8080"
+    container_name: springboot
+    depends_on:
+      - db
+

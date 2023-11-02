@@ -4,6 +4,6 @@ WORKDIR /opt/www/dth/server/digitaltwin-healthcare-server
 
 COPY ./target/*.jar app.jar
 
-EXPOSE 8070
+EXPOSE 8000
 
 CMD ["java", "-jar", "app.jar"]

@@ -9,7 +9,7 @@ services:
     image: dth-server:latest
     ports:
       - "8090:8080"
-    container_name: springboot
+    container_name: dth-server-springboot
     depends_on:
       - db
 

@@ -1,6 +1,6 @@
 services:
   db:
-    image: 'sqlite'
+    image: sqlite
     volumes:
       - ./src/main/resources/db:/data
     command: sqlite3 /data/init.db
